@@ -1,0 +1,44 @@
+% Defining new colors
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{cmured}{HTML}{CC002A}  % CMU red
+\definecolor{cmugrey}{HTML}{4D4D4D} % CMU grey
+
+\usepackage{amsmath, amssymb} % Math symbols
+\usepackage{proof}            % Proof trees
+\usepackage{graphicx}         % For including figures  
+\usepackage{hyperref}         % Adds links to your document's references
+\usepackage{tikz}             % For drawing neat figures in latex
+\usetikzlibrary{arrows,automata}
+
+% Listings setting for Python code
+\usepackage{listings}
+\lstset{%
+  basicstyle=\small\ttfamily,%
+  breakatwhitespace=true,
+  keepspaces,
+  breaklines=true,%
+  language=Python,%
+  otherkeywords={self},
+  commentstyle=\itshape,%
+  xleftmargin=10pt,
+  rangeprefix=/*\ ,
+  rangesuffix=\ */,
+  includerangemarker=false,
+  keywordstyle=\color{cmured},
+  identifierstyle=\color{Blue},
+  commentstyle=\color{Gray},
+  stringstyle=\color{Green}
+}
+
+% Comment boxes
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+\newcommand{\note}[1]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red]{#1}}
+
+% Environments
+\usepackage{amsthm}
+\newtheorem{definition}{Definition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{example}{Example}
+\newtheorem{remark}{Remark}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}

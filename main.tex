@@ -1,0 +1,60 @@
+\documentclass[11pt,a4paper]{report}
+
+% Packages and options
+\input{configs/preamble}
+
+% New commands/macros
+\input{configs/newcommands}
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{tikzpicture}[remember picture,overlay]
+   \node[anchor=north east,inner sep=30pt] at (current page.north east)
+              {\includegraphics[scale=0.3]{images/scs.png}};
+\end{tikzpicture}
+
+\begin{center}
+
+{\Large \textbf{SCS Honors Undergraduate Research Thesis}} \\
+{\large \textit{mid-semester report/thesis draft}} % Comment out for final thesis
+\vspace{1em}
+
+\large{Spring 2022}
+
+\vskip 3 cm
+
+{\huge Your Thesis Title}
+\vskip 1.5 cm
+
+\textit{by}
+\vskip .5cm
+\textbf{\Large Your Name}
+\vskip 0.5 cm
+
+\textit{Advisor} \\
+\vskip .5cm
+\textbf{\Large Your Advisor's Name}
+\vskip 3.5 cm
+
+\includegraphics[scale=0.17]{images/cmuq.jpg}
+
+\end{center}
+\end{titlepage}
+
+\tableofcontents	
+
+\input{introduction.tex}
+
+\input{related-work.tex}
+
+\input{conclusion.tex}
+
+\bibliographystyle{abbrv}
+\bibliography{references}
+
+\appendix
+\input{appendix.tex}
+
+\end{document}
