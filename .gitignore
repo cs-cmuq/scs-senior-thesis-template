@@ -1,0 +1,10 @@
+# Ignore latex generated files
+*.log
+*.aux
+*.make
+*.d
+*.fls
+*.out
+*.pdf
+*.temp
+*.synctex
