@@ -1,3 +1,6 @@
+# Ignore .tmp folder
+*.tmp/
+
 # Ignore latex generated files
 *.log
 *.aux
