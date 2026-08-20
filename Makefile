@@ -3,9 +3,7 @@ OUTDIR = .tmp
 
 .PHONY: all clean
 
-all: $(DOCNAME).pdf
-
-$(DOCNAME).pdf: $(DOCNAME).tex
+all: $(DOCNAME).tex
 	mkdir -p $(OUTDIR)
 
 	# 1. First pdflatex run (generates .aux)
